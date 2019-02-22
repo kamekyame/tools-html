@@ -1,0 +1,62 @@
+<!DOCUTYPE html>
+<html lnag="ja">
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>おみくじ：suzutomoyashi蕪式会社</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/slidebars.css">
+		<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+		<script src="js/slidebars.min.js"></script>
+		<!-- Global site tag (gtag.js) - Google Analytics-->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117672046-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-117672046-1');
+		</script>
+	</head>
+	<body>
+		<div canvas="container">
+			<div id="title" class="header gray"></div>
+			<div class="contents">
+				<img src="img/fortune/main.png" style="float: left;margin: 2em;max-width: 40%">
+				<div style="float: left;margin-top: 2em;">
+					<div style="float: left">
+						<h4>大吉の確率<input type="text" id="dai" style="margin-left:30px;height:30px;width:100px" value="1"></input>%</h4>
+						<h4>中吉の確率<input type="text" id="tyu" style="margin-left:30px;height:30px;width:100px" value="5"></input>%</h4>
+						<h4>小吉の確率<input type="text" id="syo" style="margin-left:30px;height:30px;width:100px" value="10"></input>%</h4>
+						<h4>末吉の確率<input type="text" id="sue" style="margin-left:30px;height:30px;width:100px" value="30"></input>%</h4>
+						<h4>吉の確率<input type="text" id="kiti" style="margin-left:30px;height:30px;width:100px" value="5"></input>%</h4>
+						<h4>凶の確率<input type="text" id="kyo" style="margin-left:30px;height:30px;width:100px" value="20"></input>%</h4>
+						<h4>大凶の確率<input type="text" id="daikyo" style="margin-left:30px;height:30px;width:100px" value="1"></input>%</h4>
+						<h4>おみくじを引く回数<input type="text" id="kaisu" style="margin-left:30px;height:30px;width:100px" value="1">回</input></h4>
+					</div>
+					<div style="float: left;">
+						<img src="img/fortune/pull.png" onclick="fortune()" style="max-width: 100%;margin: 2em 2em 0 2em;">
+						<br><h4 style="margin-left: 2em;margin-top: 1em;">↑おみくじを引く</h4>
+					</div>
+				</div>
+				<div style="clear:left;"></div>
+				<div id="out" style="padding-left:50px"></div>
+				<div style="clear:left;"></div>
+				<h6 class="gray info">福井工業高等専門学校 2018年度2EI 電子工学実験 プログラミング演習課題より</h6>
+				<h6 class="gray info">最新更新日：2018/7/1</h6>
+			
+			</div>
+			<audio id="sound-file" preload="metadata">
+				<source src="music/omikuzi.wav" type="audio/wav">
+			</audio>
+			<script src="js/fortune.js"></script>
+		</div>
+
+		<div off-canvas="sb-left left push">
+			<div id="offCanvas" style="margin: 0 0 0 0px"></div>
+		</div>
+		<script src="js/slidebars_left.js"></script>
+		<script>bgcolor("", true);</script>
+	</body>
+</html>

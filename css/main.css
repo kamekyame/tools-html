@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'main-font';
+    src: local('源柔ゴシック'),
+    url('../font/GenJyuuGothic-Normal.ttf');
+}
+
+html, body, [canvas=container], [off-canvas] {
+    padding: 0;	
+    -webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+    margin:0;
+    background-Color : #d4e08d;
+    font-family: 'main-font';
+}
+.header {
+    background-color: #dbb48b;
+    padding: 10px 10px 10px 10px;
+    height: 30px;
+    position: relative;
+    width: auto;
+}
+.open {
+    
+}
+.midasi {
+    font-size: 1.5em;
+}
+.info {
+    font-size: 0.7em;
+    text-align: right;
+}
+
+[canvas] .text {
+    font-size: 1em;
+}
+
+.gray {
+    color: #333333;
+}
+
+.contents {
+    margin: 10px 10px 10px 10px;
+}
+
+#out {
+    margin-top: 10px;
+}
+
+[canvas] h4 ,[canvas] h3 ,[canvas] h5 {
+    margin:10px 0 0 10px;
+}
+
+[off-canvas] div {
+    margin:10px 0 0 10px;
+}
+
+[off-canvas] h5 {
+    margin:10px 0 0 10px;
+}

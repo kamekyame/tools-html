@@ -1,0 +1,42 @@
+<!DOCUTYPE html>
+<html lnag="ja">
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>A~Zまでのタイピング練習：suzutomoyashi蕪式会社</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/slidebars.css">
+		<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+		<script src="js/slidebars.min.js"></script>
+		<!-- Global site tag (gtag.js) - Google Analytics-->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117672046-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-117672046-1');
+		</script>
+	</head>
+	<body>
+		<div canvas="container">
+			<div id="title" class="header gray"></div>
+			<div class="contents">
+				<h2 class="gray midasi">A~Zまでのタイピング練習</h2>
+				<input type="button" value="スタート(Enterキーでもできるよ)" onclick="start()"></input>
+				<div id="isStart" style="padding-left:50px"><h4>待機中…</h4></div>
+				<div id="out" style="padding-left:50px"></div>
+				<h6 class="gray info">福井工業高等専門学校 2018年度2EI 電子工学実験 プログラミング演習課題より</h6>
+				<h6 class="gray info">最新更新日：2018/7/1</h6>
+			</div>
+			<script src="js/typing.js"></script>
+		</div>
+
+		<div off-canvas="sb-left left push">
+			<div id="offCanvas" style="margin: 0 0 0 0px"></div>
+		</div>
+		<script src="js/slidebars_left.js"></script>
+		<script>bgcolor("", true);</script>
+	</body>
+</html>
